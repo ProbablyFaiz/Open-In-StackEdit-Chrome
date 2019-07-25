@@ -3,7 +3,6 @@
   "version": "1.0",
   "description": "Open a GitHub or GitLab directory as a StackEdit workspace.",
   "permissions": ["activeTab", "declarativeContent", "tabs"],
-  "options_page": "options.html",
   "background": {
     "scripts": ["background.js"],
     "persistent": false
