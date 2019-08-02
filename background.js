@@ -14,8 +14,11 @@ chrome.runtime.onInstalled.addListener(function() {
 });
 
 chrome.pageAction.onClicked.addListener( function(tab) {
-	chrome.extension.getBackgroundPage().console.log('foo');
+	chrome.extension.getBackgroundPage().console.log('Open in StackEdit triggered');
 	let tabUrl = tab.url;
+	if (tabUrl.charAt(tabUrl.length - 1) != '/') {
+		tabUrl += '/';
+	}
 	let regEx = new RegExp('https:\\/\\/git(hub|lab)\\.com\\/([^/]*)\\/([^/]*)\\/tree\\/([^/]*)\\/(.*)');
 	let match = tabUrl.match(regEx);
 
