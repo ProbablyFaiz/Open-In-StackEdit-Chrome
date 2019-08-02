@@ -1,6 +1,6 @@
 {
   "name": "Open in StackEdit",
-  "version": "0.1",
+  "version": "0.1.1",
   "description": "Open a GitHub or GitLab directory as a StackEdit workspace.",
   "permissions": ["activeTab", "declarativeContent", "tabs"],
   "background": {
